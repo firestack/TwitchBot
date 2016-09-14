@@ -9,11 +9,11 @@ namespace TwitchBot.Message
 	public enum EPermissions
 	{
 		NONE,
-		TMI,
 		USER,
 		SUBSCRIBER,
 		MOD,
 		BROADCASTER,
+		TMI,
 		SUPERUSER
 	};
 }
