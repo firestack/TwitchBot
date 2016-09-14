@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace TwitchBot.BuiltinPlugins
 {
 	[Attributes.PluginEnabled]
-	[Attributes.Command(accessLevel = Message.EPermissions.TMI, respondsTo = Message.ECommand.RECONNECT | Message.ECommand.PRIVMSG, prefix = '>', suffix = "reconnect")]
+	[Attributes.Command(accessLevel = Message.EPermissions.TMI, respondsTo = Message.ECommand.RECONNECT)]
 	class Reconnect : Classes.Operator
 	{
 		public override void Invoke()
