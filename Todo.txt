@@ -1,1 +1,8 @@
 ﻿// TODO: Implement Adapters
+
+// TODO: Error handling
+/// OnError event in bot
+/// Pass in exception
+/// Called from event handler
+/// continue execution
+/// Log to file

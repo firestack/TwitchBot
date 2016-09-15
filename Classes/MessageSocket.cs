@@ -87,7 +87,7 @@ namespace TwitchBot.Classes
 		virtual public void Send(string message)
 		{
 			
-			if (sockConn?.Connected != null)
+			if (sockConn?.Connected == true && sockStream != null)
 			{
 				var data = Encoding.UTF8.GetBytes(message.TrimEnd('\r', '\n') + "\r\n");
 				sockStream.Write(data, 0, data.Length);

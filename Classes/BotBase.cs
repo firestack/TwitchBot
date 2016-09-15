@@ -26,7 +26,8 @@ namespace TwitchBot.Classes
 			fastMessage = new System.Timers.Timer() { Interval = fastLength, AutoReset = true };
 			fastMessage.Elapsed += (sender, args) => MessageBalancer(Message.EPermissions.MOD);
 
-			OnStartup += (sender) => { slowMessage.Start(); fastMessage.Start(); };
+			OnStartup += sender => StartTimers();
+			OnShutdown += sender => StopTimers();
 
 			EH = new EventHandler() { bot = this };
 			EH.Load();			

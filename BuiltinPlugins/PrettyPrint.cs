@@ -7,7 +7,7 @@ using TwitchBot.Message;
 
 namespace TwitchBot.Plugins
 {
-	[Attributes.Command( accessLevel = Message.EPermissions.NONE, respondsTo = Message.ECommand.ALL)]
+	[Attributes.Command( accessLevel = Message.EPermissions.ALL, respondsTo = Message.ECommand.ALL)]
 	[Attributes.PluginEnabled(true)]
 	public class PrettyPrint : Classes.Operator
 	{
